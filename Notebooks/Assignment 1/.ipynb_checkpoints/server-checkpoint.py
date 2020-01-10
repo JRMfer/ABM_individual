@@ -10,7 +10,7 @@ import sys
 # Change stdout so we can ignore most prints etc.
 orig_stdout = sys.stdout
 sys.stdout = open(os.devnull, 'w')
-IPython.get_ipython().magic("run Mesa_introduction.ipynb")
+IPython.get_ipython().magic("run Mesa_introduction-4.ipynb")
 sys.stdout = orig_stdout
 
 # You can change this to whatever ou want. Make sure to make the different types
