@@ -1,6 +1,7 @@
 from mesa import Model
 from mesa.space import ContinuousSpace
 from mesa.datacollection import DataCollector
+import matplotlib.pyplot as plt
 import numpy as np
 from agents import GangMember
 from schedule import OneRandomActivation
@@ -73,3 +74,4 @@ if __name__ == "__main__":
 
     data = model.datacollector.get_model_vars_dataframe()
     data.plot()
+    plt.show()
